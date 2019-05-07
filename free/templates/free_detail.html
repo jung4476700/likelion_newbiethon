@@ -1,0 +1,115 @@
+<h1>
+    자세한 본문 내용
+</h1>
+<br>
+<h1>
+    제목:{{content.title}}
+</h1>
+<p>
+    작성날짜:{{content.pub_date}}
+</p>
+<p>
+    자세한 본문:{{content.body}}
+</p>
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <title> Talk Talk 게시판 </title>
+
+        <style>
+        @font-face { font-family: 'BMHANNAPro'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff'); font-weight: normal; font-style: normal; }
+        * {font-family: 'BMHANNAPro';}
+        </style>
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+            <header>
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                      <img src="./Let.jpg" width="50" height="35" class="d-inline-block align-top" alt="let's_get_it_icon">
+                      <a class="navbar-brand" href="#">Let's get it</a>
+                      <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarCollapse"
+                        data-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home
+                              <span class="sr-only">(current)</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">contest</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">지원영상모음</a>
+                          </li>
+                          <a class="nav-link" href="#">멘토구하기</a>
+                          <a class="nav-link" href="#">자유게시판</a>
+                          <a class="nav-link" href="#">로그인</a>
+                          <a class="nav-link" href="#">회원가입</a>
+                        </ul>
+                        <form class="form-inline mt-2 mt-md-0">
+                          <input aria-label="Search" class="form-control mr-sm-2" placeholder="Search" type="text" />
+                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </nav>
+                  </header>
+        <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <caption>  </caption>
+            </thead>
+            <tbody>
+                
+                <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+                    <tr>
+                        <th>제목: </th>
+                        <td><input type="text" placeholder="요즘 무슨 노래가 제일 인기 있음? " name="subject" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                        <th>내용: </th>
+                        <td><textarea cols="10" placeholder="요즘 끌리는 노래가 없다 ㅠㅠ 추천좀 해줘~~ " name="content" class="form-control"></textarea></td>
+                    </tr>
+
+                    <br>
+                    <br>
+                    <br>
+                    
+                 
+                   
+                </form>
+            </tbody>
+        </table>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <tbody>
+            <form action="write_ok.jsp" method="post" encType="multiplart/form-data">
+        <tr>
+            <th>답글:</th>
+            <td><textarea cols="10" placeholder="답글을 달아주세요." name="content" class="form-control"></textarea></td>
+        </tr>
+        </form>
+        </tbody>
+
+        <div style="float:right">
+        
+            <input type=button value="답글달기"></a>
+        </div>
+        </body>
+        </html>
+      
+

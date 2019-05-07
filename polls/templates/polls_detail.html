@@ -1,0 +1,26 @@
+{%load staticfiles %}
+
+<html>
+    
+</html>
+<h1>
+    자세한 본문 내용
+</h1>
+<br>
+<h1>
+    제목:{{score.title}}
+</h1>
+<p>
+    작성자:{{score.author}}
+</p>
+<p>
+    작성날짜:{{score.pub_date}}
+</p>
+<p>
+    자세한 본문:{{score.body}}
+</p>
+
+<iframe width="360" height="202" src="https://www.youtube.com/watch?v={{score.video_key}}" frameborder="0" allowfullscreen></iframe>
+
+
+</html>
